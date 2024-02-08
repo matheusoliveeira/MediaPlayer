@@ -11,6 +11,13 @@
             <Setter Property="BorderThickness" Value="0" />
             <Setter Property="Background" Value="AliceBlue" />
         </Style>
+        <Style x:Key="CustomSeparatorStyle" TargetType="Separator">
+            <Setter Property="LayoutTransform">
+                <Setter.Value>
+                    <RotateTransform Angle="90"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Window.Resources>
     <Window.CommandBindings>
         <CommandBinding Command="ApplicationCommands.Open" CanExecute="Open_CanExecute" Executed="Open_Executed" />
@@ -49,35 +56,19 @@
             <Separator></Separator>
         </StackPanel>
         <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Height="40" Background="AliceBlue">
-            <Separator>
-                <Separator.LayoutTransform>
-                    <RotateTransform Angle="90" />
-                </Separator.LayoutTransform>
-            </Separator>
+            <Separator Style="{StaticResource CustomSeparatorStyle}"/>
             <Button Command="MediaCommands.Play">
                 <Image Source="Images/media-play.png"/>
             </Button>
-            <Separator>
-                <Separator.LayoutTransform>
-                    <RotateTransform Angle="90" />
-                </Separator.LayoutTransform>
-            </Separator>
+            <Separator Style="{StaticResource CustomSeparatorStyle}"/>
             <Button Command="MediaCommands.Pause">
                 <Image Source="Images/pause-icon.png"/>
             </Button>
-            <Separator>
-                <Separator.LayoutTransform>
-                    <RotateTransform Angle="90" />
-                </Separator.LayoutTransform>
-            </Separator>
+            <Separator Style="{StaticResource CustomSeparatorStyle}"/>
             <Button Command="MediaCommands.Stop">
                 <Image Source="Images/stop-icon.png"/>
             </Button>
-            <Separator>
-                <Separator.LayoutTransform>
-                    <RotateTransform Angle="90" />
-                </Separator.LayoutTransform>
-            </Separator>
+            <Separator Style="{StaticResource CustomSeparatorStyle}"/>
         </StackPanel>
         <Grid x:Name="screen">
             <Label>
