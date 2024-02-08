@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Wwalczyszyn-Android-Style-Music-Player.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\edit.png" />
+    <None Remove="images\media-play.png" />
+    <None Remove="images\musicnote.png" />
+    <None Remove="images\open_file.png" />
+    <None Remove="images\pause-icon.png" />
+    <None Remove="images\stop-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Wwalczyszyn-Android-Style-Music-Player.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TagLibSharp" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\edit.png" />
+    <Resource Include="images\media-play.png" />
+    <Resource Include="images\musicnote.png" />
+    <Resource Include="images\open_file.png" />
+    <Resource Include="images\pause-icon.png" />
+    <Resource Include="images\stop-icon.png" />
+  </ItemGroup>
+
+</Project>

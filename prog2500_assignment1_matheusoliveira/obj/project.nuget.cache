@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8R1NiwEQtqvXcK6QttkYCXR2erSfaFBVHXHax71NKu5eQEkOz6+w04bGmyEO6OnFtcfpamYVwxwtbUUAC8BfKw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mathe\\source\\repos\\prog2500_assignment1_matheusoliveira\\prog2500_assignment1_matheusoliveira\\prog2500_assignment1_matheusoliveira.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mathe\\.nuget\\packages\\taglibsharp\\2.3.0\\taglibsharp.2.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
